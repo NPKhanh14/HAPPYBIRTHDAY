@@ -445,7 +445,7 @@ body {
 }
 
     .balloon1 .balloon-body {
-        background: #FF69B4;
+        background: #ff6b6b;
     }
 
 .balloon2 {
@@ -455,7 +455,7 @@ body {
 }
 
     .balloon2 .balloon-body {
-        background: #FF1493;
+        background: #4ecdc4;
     }
 
 .balloon3 {
@@ -465,7 +465,7 @@ body {
 }
 
     .balloon3 .balloon-body {
-        background: #DC143C;
+        background: #45b7d1;
     }
 
 .balloon4 {
@@ -475,7 +475,7 @@ body {
 }
 
     .balloon4 .balloon-body {
-        background: #FFB6C1;
+        background: #96ceb4;
     }
 
 .balloon5 {
@@ -485,7 +485,7 @@ body {
 }
 
     .balloon5 .balloon-body {
-        background: #FF6B9D;
+        background: #feca57;
     }
 
 @keyframes floatUp {
@@ -637,7 +637,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #FF69B4, #FF1493, #DC143C, #FFB6C1, #FF6B9D);
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
     z-index: 1000;
@@ -760,7 +760,7 @@ body {
 .birthday-title {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    background: linear-gradient(45deg, #FF69B4, #FF1493, #DC143C, #FFB6C1, #FF6B9D);
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1466,7 +1466,7 @@ body {
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #FF69B4;
+    background: #ff6b6b;
     animation: confettiFall 3s linear infinite;
 }
 
