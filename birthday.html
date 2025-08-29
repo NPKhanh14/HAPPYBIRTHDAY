@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <title>🎉 Thiệp Sinh Nhật 🎉</title>
+    <link rel="stylesheet" href="css/style_clean.css?v=mobile-original-restored">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Audio -->
+    <audio id="birthdayMusic" loop autoplay preload="auto">
+        <source src="audio/nhac.mp3" type="audio/mpeg">
+        <source src="audio/nhac.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Birthday Website -->
+    <div id="birthdayWebsite" class="birthday-website">
+        <!-- Background Elements -->
+        <div class="background-elements">
+            <div class="star star1"></div>
+            <div class="star star2"></div>
+            <div class="star star3"></div>
+            <div class="star star4"></div>
+            <div class="star star5"></div>
+        </div>
+
+        <!-- Balloons -->
+        <div class="balloons-container">
+            <div class="balloon balloon1">
+                <div class="balloon-body"></div>
+                <div class="balloon-string"></div>
+            </div>
+            <div class="balloon balloon2">
+                <div class="balloon-body"></div>
+                <div class="balloon-string"></div>
+            </div>
+            <div class="balloon balloon3">
+                <div class="balloon-body"></div>
+                <div class="balloon-string"></div>
+            </div>
+            <div class="balloon balloon4">
+                <div class="balloon-body"></div>
+                <div class="balloon-string"></div>
+            </div>
+            <div class="balloon balloon5">
+                <div class="balloon-body"></div>
+                <div class="balloon-string"></div>
+            </div>
+        </div>
+
+        <!-- Gift Box -->
+        <div class="gift-container">
+            <div class="gift-box" id="giftBox">
+                <div class="gift-lid">
+                    <div class="gift-bow">
+                        <div class="bow-left"></div>
+                        <div class="bow-right"></div>
+                        <div class="bow-center"></div>
+                    </div>
+                </div>
+                <div class="gift-body"></div>
+                <div class="gift-ribbon-vertical"></div>
+                <div class="gift-ribbon-horizontal"></div>
+            </div>
+
+            <div class="click-instruction">
+                <i class="fas fa-hand-pointer"></i>
+                <span>Click me!</span>
+            </div>
+        </div>
+
+        <!-- Birthday Message (Initially hidden, will be shown by JavaScript) -->
+        <div class="birthday-message hidden" id="birthdayMessage">
+            <!-- Birthday Card Container -->
+            <div class="birthday-card">
+                <!-- Card Header -->
+                <div class="card-header">
+                    <div class="header-decoration">
+                        <div class="decoration-star">⭐</div>
+                        <div class="decoration-heart">💖</div>
+                        <div class="decoration-balloon">🎈</div>
+                    </div>
+
+                    <div class="avatar-container">
+                        <img src="img/banhsinhnhat.jpg" alt="Birthday Person" class="birthday-avatar">
+                        <div class="avatar-glow"></div>
+                    </div>
+
+                    <h1 class="birthday-title">
+                        🎉 HAPPY BIRTHDAY 🎉
+                    </h1>
+
+                    <h2 class="birthday-name" id="birthdayName">
+                        Bé yêu!
+                    </h2>
+                </div>
+
+                <!-- Photo Gallery -->
+                <div class="photo-gallery">
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="img/2.jpg" alt="Memory 1" class="memory-photo">
+                        </div>
+                        <div class="photo-item">
+                            <img src="img/10.jpg" alt="Memory 2" class="memory-photo">
+                        </div>
+                        <div class="photo-item">
+                            <img src="img/3.jpg" alt="Memory 3" class="memory-photo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Birthday Wishes Section -->
+                <div class="wishes-section">
+                    <div class="wishes-container">
+                        <h3 class="wishes-title">💌 Lời chúc sinh nhật đặc biệt 💌</h3>
+
+                        <div class="wishes-grid">
+                            <div class="wish-card">
+                                <div class="wish-icon">🎂</div>
+                                <p class="wish-text">chúc em sinh nhật vui vẻ</p>
+                            </div>
+
+                            <div class="wish-card">
+                                <div class="wish-icon">🌟</div>
+                                <p class="wish-text">chúc em thêm một tuổi thêm nhiều trải nghiệm mới</p>
+                            </div>
+
+                            <div class="wish-card">
+                                <div class="wish-icon">🎈</div>
+                                <p class="wish-text">chúc em luôn thành công và vững bước trên con đường mà mình chọn</p>
+                            </div>
+
+                            <div class="wish-card">
+                                <div class="wish-icon">💖</div>
+                                <p class="wish-text">dù có chuyện gì hay stress thì anh luôn ở sau để giúp đỡ em</p>
+                            </div>
+
+                            <div class="wish-card">
+                                <div class="wish-icon">🌈</div>
+                                <p class="wish-text">mọi chuyện ngoài kia mặc em quậy còn còn mọi thứ để anh lo</p>
+                            </div>
+
+                            <div class="wish-card">
+                                <div class="wish-icon">🎊</div>
+                                <p class="wish-text">em phải nhớ luôn nở nụ cười trên môi dù có chuyện gì đi nữa thì mình cùng nhau giải quyết</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Photos Section -->
+                <div class="more-photos-section">
+                    <h3 class="section-title">📸 Những kỷ niệm đẹp 📸</h3>
+                    <div class="photos-carousel">
+                        <div class="carousel-track" id="photosCarousel">
+                            <img src="img/4.jpg" alt="Memory 5" class="carousel-photo">
+                            <img src="img/5.jpg" alt="Memory 6" class="carousel-photo">
+                            <img src="img/6.jpg" alt="Memory 7" class="carousel-photo">
+                            <img src="img/7.jpg" alt="Memory 8" class="carousel-photo">
+                            <img src="img/8.jpg" alt="Memory 9" class="carousel-photo">
+                            <img src="img/9.jpg" alt="Memory 10" class="carousel-photo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Birthday Cake Section -->
+                <div class="cake-section">
+                    <div class="birthday-cake">
+                        <div class="cake-base">
+                            <div class="cake-layer layer1"></div>
+                            <div class="cake-layer layer2"></div>
+                            <div class="cake-layer layer3"></div>
+                            <div class="candles">
+                                <div class="candle">
+                                    <div class="flame"></div>
+                                </div>
+                                <div class="candle">
+                                    <div class="flame"></div>
+                                </div>
+                                <div class="candle">
+                                    <div class="flame"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cake-message">🎂 Click vào bánh để thổi nến và ước một điều thật đặc biệt! 🎂</p>
+                </div>
+
+                <!-- Final Message -->
+                <div class="final-message">
+                    <div class="message-border">
+                        <h2 class="final-title">✨ Lời nhắn cuối ✨</h2>
+                        <p class="final-text">
+                            cuối cùng cũng cảm ơn em vì đã xuất hiện trong cuộc sống của anh và làm nó tốt hơn, và mong mọi điều đẹp đẽ nhất sẽ đến bên em
+                        </p>
+                        <p class="signature">🎉 Happy Birthday! 🎉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Confetti Container -->
+        <div class="confetti-container" id="confettiContainer"></div>
+
+        <!-- Floating Hearts -->
+        <div class="hearts-container" id="heartsContainer"></div>
+
+        <!-- Music Control -->
+        <div class="music-control">
+            <button id="musicToggle" class="music-btn" title="Toggle Music">
+                <i class="fas fa-volume-up"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/birthday.js"></script>
+</body>
+</html>
